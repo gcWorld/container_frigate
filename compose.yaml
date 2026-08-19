@@ -28,3 +28,4 @@ services:
       - "8555:8555/udp" # WebRTC over udp
     environment:
       FRIGATE_RTSP_PASSWORD: "password"
+      PLUS_API_KEY: ${PLUS_API_KEY}
