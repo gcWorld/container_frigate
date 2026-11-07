@@ -14,8 +14,8 @@ services:
       - /dev/accel:/dev/accel # Intel NPU
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /mnt/docker-data/frigate/config:/config
-      - /mnt/docker-data/storage:/media/frigate
+      - /mnt/data/docker/frigate/config:/config
+      - /mnt/data/docker/storage:/media/frigate
       - type: tmpfs # 1GB In-memory filesystem for recording segment storage
         target: /tmp/cache
         tmpfs:
